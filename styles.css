@@ -1,0 +1,128 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #a14249;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #171a18;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #333;
+    color:#b5222d;
+  }
+
+  .navbar p {
+      color: white;
+      font-size: 17px;
+      text-align: center;
+      font-family: monospace;
+  }
+
+  .main {
+    padding: 40px;
+    margin-top: 70px;
+    height: 200px; 
+  }
+  
+
+
+  .deck {
+      background-color: white;
+    margin: auto;
+    height: 200px;
+    width: 120px;
+    display: flex;
+    border: 2px solid black;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    user-select: none;
+  }
+
+  .card {
+      display: flex;
+position: relative;
+background-color: white;
+  margin: auto;
+  height: 200px;
+  width: 120px;
+  border: 2px solid black;
+  color: black;
+  justify-content: center;
+  align-items: center; 
+  font-size: 4rem;
+  border-radius: .5rem;
+  user-select: none;
+}
+  
+  .button {
+    background-color: #b5222d;
+    border: 2px solid black;
+    border-radius: .5rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+      background-color: #de525d;
+      color: black;
+  }
+
+  .card.red {
+    color: red;
+  }
+  
+  .card.black {
+    color: black;
+  }
+  
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: attr(data-value);
+    font-size: 2rem;
+  }
+  
+  .card::before {
+    top: .5rem;
+    left: .5rem
+  }
+  
+  .card::after {
+    bottom: .5rem;
+    right: .5rem;
+    transform: rotate(180deg);
+  }
+  
+  .ohjeet {
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
